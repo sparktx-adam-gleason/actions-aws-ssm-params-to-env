@@ -1,9 +1,9 @@
 name: 'AWS SSM parameters to environment variables'
 description: 'load AWS SSM Parameters into environment variables'
-author: 'Bardavon Health Innovations and Denny Biasiolli at IP Sentinel'
+author: 'Adam Gleason'
 branding:
   icon: 'cloud'
-  color: 'orange'
+  color: 'blue'
 inputs:
   ssm-path:
     description: 'AWS SSM path for parameter (eg. `/ssm/parameter`)'
@@ -13,6 +13,9 @@ inputs:
     required: false
   prefix:
     description: 'Set a prefix on the environment variable'
+    required: false
+  strip_prefix:
+    description: 'Prefix string to strip from ssm paramter'
     required: false
   decryption:
     description: 'Whether the parameter must be decrypted or not'
