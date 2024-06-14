@@ -14,7 +14,7 @@ inputs:
   prefix:
     description: 'Set a prefix on the environment variable'
     required: false
-  strip_prefix:
+  strip-prefix:
     description: 'Prefix string to strip from ssm paramter'
     required: false
   decryption:
